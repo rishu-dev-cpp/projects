@@ -1,11 +1,12 @@
 let userScore = 0;
-const computerScore = prompt("Enter score to chase: ");
+let computerScore = parseInt(prompt("Enter score to chase: ")) || 0;
 let isGameOver = false;
 
 const buttons = document.querySelectorAll('button');
 const userScoreDisplay = document.querySelectorAll('h3')[0];
 const compScoreDisplay = document.querySelectorAll('h3')[1];
 const result = document.getElementById('result');
+const restartBtn = document.getElementById('restart');
 
 compScoreDisplay.innerText = `Computer Score: ${computerScore}`;
 
@@ -21,7 +22,7 @@ buttons.forEach(button => {
 
         if (userChoice === compChoice) {
             alert(`Out! Computer chose ${compChoice}.`);
-            isGameOver = true;
+            gameOver();
             
             if (userScore < computerScore) {
                 result.innerText = `You lost by ${computerScore - userScore} runs!`;
@@ -37,9 +38,23 @@ buttons.forEach(button => {
 
             if (userScore > computerScore) {
                 result.innerText = `Congrats! You won by ${userScore - computerScore} runs!`;
-                isGameOver = true;
+                gameOver();
                 const audio = new Audio(winSound).play();
             }
         }
     });
 });
+function gameOver(){
+    isGameOver = true;
+    restartBtn.style.display = "block";
+}
+restartBtn.addEventListener('click', () => {
+    isGameOver = false;
+    userScore = 0;
+    computerScore = parseInt(prompt("Enter score to chase: ")) || 0;
+    userScoreDisplay.innerText = `Your Score: 0`;
+    compScoreDisplay.innerText = `Computer Score: ${computerScore}`;
+    result.innerText = ``;
+    restartBtn.style.display = "none";
+});
+
