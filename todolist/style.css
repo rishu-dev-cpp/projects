@@ -1,0 +1,153 @@
+/* 
+For White theme
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    font-family: sans-serif;
+
+}
+.container {
+    background-color: #ffffff;
+    padding: 25px;   
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    margin-bottom: 20px; 
+    color: #333;
+}
+.addTask {
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 25px; 
+}
+#inputTask {
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    outline: none; 
+}
+.addTask button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+#taskList {
+    list-style: none; 
+}
+#taskList li {
+    background-color: #f9f9f9; 
+    padding: 10px;
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-left: 4px solid #4CAF50; 
+}
+#taskList li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px; 
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#taskList li button:hover {
+    background-color: #cc0000; 
+} */
+
+/* For Black theme */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121214; 
+    font-family: sans-serif;
+}
+.container {
+    background-color: #1e1e24;
+    padding: 25px;   
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+h2 {
+    margin-bottom: 20px; 
+    color: #e2e8f0;
+}
+.addTask {
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 25px; 
+}
+#inputTask {
+    flex: 1; 
+    padding: 10px; 
+    background-color: #2a2a32;
+    border: 1px solid #3f3f46; 
+    color: #ffffff;
+    border-radius: 5px; 
+    outline: none; 
+}
+#inputTask::placeholder {
+    color: #a1a1aa;
+}
+.addTask button {
+    /* 👁️ Emerald Green: Dark theme par ye bohot smooth lagta hai */
+    background-color: #5c10b9; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold;
+    transition: 1s;
+}
+.addTask button:hover {
+    background-color: #960577; 
+}
+#taskList {
+    list-style: none; 
+}
+#taskList li {
+    background-color: #272730; 
+    color: #c6d8d8fd;
+    padding: 10px;
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+#taskList li button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 5px 10px; 
+    border-radius: 3px;
+    cursor: pointer;
+}
+#taskList li button:hover {
+    background-color: #dc2626; 
+}
