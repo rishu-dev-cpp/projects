@@ -4,7 +4,7 @@ function addTask(){
     const taskText = input.value.trim();
 
     if(taskText === ""){
-        alert("Bro! give some input 🥲");
+        alert("Bro ! give some input 🥲");
         return;
     }
 
@@ -14,14 +14,11 @@ function addTask(){
     newTask.textContent = taskText;
     deleteTask(newTask);
     taskList.appendChild(newTask);
-    document.getElementById('inputTask').value = "";
+    input.value = "";
     
 }
 function deleteTask(newTask){
 
-    if(taskText === ""){
-        alert("Bro! give some input🥲")
-    }
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = "Delete";
     newTask.appendChild(deleteBtn);
