@@ -14,6 +14,7 @@ button.addEventListener('click', () => {
             const data = JSON.parse(this.responseText);
             img.src = data.avatar_url;
             username.textContent = data.name;
+            img.style.display = "block";
         }
     }
     xhr.send();

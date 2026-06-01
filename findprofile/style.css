@@ -58,6 +58,11 @@ button:hover {
 
 #profile-img {
     margin: 10px;
+    width: 150px;      
+    height: 150px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out; 
+    object-fit: cover;
 }
 #profile-name {
     color: white;
