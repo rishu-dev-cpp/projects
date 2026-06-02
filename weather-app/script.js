@@ -1,5 +1,5 @@
 const button = document.getElementById('search-btn');
-const myKey = "";
+let myKey = "";
 const weatherInfo = document.querySelector('.weather-info');
 
 
